@@ -1,6 +1,7 @@
 const myarr= [0,1,2,3,4,5,6];
 
 // console.log(myarr[3])
+console.log(myarr)
 
 const myarr2 = new Array(1,2,3,4,5,6,7)
 // console.log(myarr2);
