@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom React</title>
+</head>
+<body>
+    <button>Click Me</button>
+</body>
+<script>
+    console.log('Akhand Raj Singh');
+    class CustomReact {
+        constructor() {
+            this.library = "CustomReact";
+            this.server = "https://localhost:3000";
+            
+            // Adding event listener to the button
+            const button = document.querySelector('button');
+            if (button) {
+                button.addEventListener('click', this.handleClick.bind(this));
+            } else {
+                console.error("Button not found in the DOM.");
+            }
+        }
+
+        handleClick() {
+            console.log("Button Clicked");
+            console.log(this);
+        }
+    }
+
+    const app = new CustomReact();
+</script>
+</html>
