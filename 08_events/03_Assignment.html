@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Java Script</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const setStart = function(){
+        console.log("akhand");
+    }
+   document.querySelector("#start").addEventListener('click', setInterval( setStart,1000))
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearInterval(setStop);
+    })
+   
+</script>
+</html>
